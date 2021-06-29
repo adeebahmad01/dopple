@@ -7,12 +7,14 @@ const GradientButton = withStyles((theme) => ({
     paddingRight: `2rem`,
     paddingTop: `0.5rem`,
     paddingBottom: `0.5rem`,
+    fontSize: `1rem`,
   },
 }))(Btn);
 
 const Button = withStyles((theme) => ({
   root: {
     paddingLeft: `2rem`,
+    fontSize: `1rem`,
     paddingRight: `2rem`,
     paddingTop: `0.5rem`,
     paddingBottom: `0.5rem`,

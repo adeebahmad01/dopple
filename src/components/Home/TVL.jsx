@@ -11,17 +11,17 @@ const TVL = () => {
     <section>
       <Container maxWidth="lg">
         <Grid container spacing={2}>
-          <Grid item lg={4}>
+          <Grid item lg={4} xs={12}>
             <InfoCard value="$49M" Icon={<TvlDark width={36} />}>
               Total Value Locked
             </InfoCard>
           </Grid>
-          <Grid item lg={4}>
+          <Grid item lg={4} xs={12}>
             <InfoCard value="$1026M" Icon={<TradingDark width={36} />}>
               Total Trading Volume
             </InfoCard>
           </Grid>
-          <Grid item lg={4}>
+          <Grid item lg={4} xs={12}>
             <InfoCard value="$11M" Icon={<MarketCapDark width={36} />}>
               DOP Market Cap
             </InfoCard>

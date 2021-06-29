@@ -1,5 +1,7 @@
 import React from "react";
+import Contact from "./Contact";
 import Farm from "./Farm";
+import Footer from "./Footer";
 import Header from "./Header";
 import Protocol from "./Protocol";
 import Roadmap from "./Roadmap";
@@ -15,6 +17,8 @@ const Home = () => {
       <Protocol />
       <Farm />
       <Roadmap />
+      <Contact />
+      <Footer />
     </div>
   );
 };

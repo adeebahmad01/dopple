@@ -1,9 +1,11 @@
 import { Box, Container, Grid, Typography } from "@material-ui/core";
 import React from "react";
+import { useMargin } from "../../hooks/hooks";
 import FarmCard from "../utils/FarmCard";
-import { GradientButton } from "../utils/StyledButton";
+import { Button, GradientButton } from "../utils/StyledButton";
 
 const Farm = () => {
+  const { mt } = useMargin(2.5);
   return (
     <Box component="section" mt="3rem">
       <Container component={Box} py="2.5rem" maxWidth="lg">
@@ -47,6 +49,7 @@ const Farm = () => {
             justifyContent="center"
             alignItems="center"
             lg={6}
+            xs={12}
           >
             <div style={{ width: `100%` }}>
               <FarmCard />
@@ -54,6 +57,11 @@ const Farm = () => {
               <FarmCard />
               <FarmCard />
             </div>
+            <Box textAlign="center" className={mt}>
+              <Button variant="contained" color="primary">
+                View More
+              </Button>
+            </Box>
           </Grid>
         </Grid>
       </Container>
