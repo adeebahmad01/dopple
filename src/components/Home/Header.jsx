@@ -31,7 +31,7 @@ const Header = () => {
             Dopple Finance
           </Typography>
         </Box>
-        <Box>
+        <Box display="flex">
           <TextButton
             variant="text"
             style={{ minWidth: `0` }}
