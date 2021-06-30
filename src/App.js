@@ -2,6 +2,7 @@ import Routes from "./Routes";
 import { BrowserRouter } from "react-router-dom";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core";
 import "./App.css";
+import { useEffect } from "react";
 function App() {
   const theme = createMuiTheme({
     palette: {
@@ -40,6 +41,8 @@ function App() {
     },
     typography: {
       fontFamily: ["Poppins", "Arial", "sans-serif"],
+      fontSize: `1.125rem`,
+      lineHeight: `1.5rem`,
       h1: {
         fontSize: `3rem`,
         fontWeight: `bold`,
@@ -79,6 +82,15 @@ function App() {
         lineHeight: `1.5rem`,
         textTransform: `capitalize`,
       },
+      subtitle1: {
+        fontSize: `.875rem`,
+        lineHeight: `1.25rem`,
+        fontWeight: 600,
+      },
+      subtitle2: {
+        fontSize: `0.75rem`,
+        lineHeight: `1rem`,
+      },
     },
     breakpoints: {
       values: {
@@ -96,6 +108,9 @@ function App() {
       },
     },
   });
+  useEffect(() => {
+    document.documentElement.classList.add("dark");
+  }, []);
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>

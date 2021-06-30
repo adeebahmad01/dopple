@@ -42,3 +42,19 @@
     display: none;
   }
 }
+
+@media (max-width: 1460px) {
+  .outer_stake > * > .MuiContainer-root.MuiContainer-maxWidthLg {
+    margin: 0 0 0 13rem !important;
+  }
+}
+
+@media (max-width: 1250px) {
+  .outer_stake > * > .MuiContainer-root.MuiContainer-maxWidthLg {
+    margin: 0 auto !important;
+  }
+}
+
+tbody tr {
+  border: 1px solid #606571 !important;
+}

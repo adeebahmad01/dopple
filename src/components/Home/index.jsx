@@ -10,16 +10,18 @@ import TVL from "./TVL";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Header />
-      <Stablecoin />
-      <TVL />
-      <Protocol />
-      <Farm />
-      <Roadmap />
-      <Contact />
+      <main>
+        <Stablecoin />
+        <TVL />
+        <Protocol />
+        <Farm />
+        <Roadmap />
+        <Contact />
+      </main>
       <Footer />
-    </div>
+    </>
   );
 };
 

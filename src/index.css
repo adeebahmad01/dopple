@@ -1,0 +1,37 @@
+/* ./src/index.css */
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+.dark\:bg-steel-500 {
+  background-color: #2c3038;
+}
+
+.dark\:bg-dark-500 {
+  background-color: #606571;
+}
+
+.dark\:text-dark-700 {
+  background-color: #40444f !important;
+}
+
+.dark\:bg-dark-400 {
+  background-color: #515560;
+}
+
+.dark\:border-t-dark-500 {
+  border-top: 1px solid #606571 !important;
+}
+
+.dark\:border-dark-500 {
+  border: 1px solid #606571 !important;
+}
+
+.dark\:bg-dark-700 {
+  background-color: #40444f !important;
+}
+
+.dark\:bg-dark-800 {
+  background-color: #2c3038 !important;
+}
