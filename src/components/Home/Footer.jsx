@@ -24,22 +24,22 @@ const Footer = () => {
           </Box>
           <Box display="flex" className="gap" alignItems="center">
             <a href="#">
-              <GithubIcon width={38} />{" "}
+              <GithubIcon style={{maxWidth: `100%`}} width={38} />{" "}
             </a>
             <a href="#">
-              <CoinGeckoIcon width={38} />{" "}
+              <CoinGeckoIcon style={{maxWidth: `100%`}} width={38} />{" "}
             </a>
             <a href="#">
-              <CoinMarketCapIcon width={38} />{" "}
+              <CoinMarketCapIcon style={{maxWidth: `100%`}} width={38} />{" "}
             </a>
             <a href="#">
-              <AnnouncementIcon width={38} />{" "}
+              <AnnouncementIcon style={{maxWidth: `100%`}} width={38} />{" "}
             </a>
             <a href="#">
-              <TelegramIcon width={38} />{" "}
+              <TelegramIcon style={{maxWidth: `100%`}} width={38} />{" "}
             </a>
             <a href="#">
-              <TwitterIcon width={38} />{" "}
+              <TwitterIcon style={{maxWidth: `100%`}} width={38} />{" "}
             </a>
           </Box>
         </Box>
