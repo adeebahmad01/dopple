@@ -8,7 +8,7 @@ const Revenue = () => {
       <Container component={Box} p="1rem" maxWidth="lg">
         <div className="grid sm:grid-cols-2">
           <div className="sm:hidden block">
-            <div className="col-span-1 dark:flex hidden">
+            <div className="col-span-1 dark:flex">
               <div
                 style={{
                   display: "inline-block",
@@ -21,99 +21,32 @@ const Revenue = () => {
               >
                 <div
                   style={{
-                    boxSizing: "border-box",
-                    display: "block",
+                    display: "inline-block",
                     maxWidth: "100%",
+                    overflow: "hidden",
+                    position: "relative",
+                    boxSizing: "border-box",
+                    margin: 0,
                   }}
                 >
                   <img
-                    alt
-                    aria-hidden="true"
-                    role="presentation"
-                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjI4MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    src={img}
+                    decoding="async"
                     style={{
-                      maxWidth: "100%",
-                      display: "block",
-                      margin: 0,
-                      border: "none",
+                      visibility: "inherit",
+                      inset: 0,
+                      boxSizing: "border-box",
                       padding: 0,
+                      border: "none",
+                      margin: "auto",
+                      display: "block",
+                      minWidth: "100%",
+                      maxWidth: "100%",
+                      minHeight: "100%",
+                      maxHeight: "100%",
                     }}
                   />
                 </div>
-                <img
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  decoding="async"
-                  style={{
-                    visibility: "hidden",
-                    position: "absolute",
-                    inset: 0,
-                    boxSizing: "border-box",
-                    padding: 0,
-                    border: "none",
-                    margin: "auto",
-                    display: "block",
-                    width: 0,
-                    height: 0,
-                    minWidth: "100%",
-                    maxWidth: "100%",
-                    minHeight: "100%",
-                    maxHeight: "100%",
-                  }}
-                />
-              </div>
-            </div>
-            <div className="col-span-1 dark:hidden flex">
-              <div
-                style={{
-                  display: "inline-block",
-                  maxWidth: "100%",
-                  overflow: "hidden",
-                  position: "relative",
-                  boxSizing: "border-box",
-                  margin: 0,
-                }}
-              >
-                <div
-                  style={{
-                    boxSizing: "border-box",
-                    display: "block",
-                    maxWidth: "100%",
-                  }}
-                >
-                  <img
-                    alt
-                    aria-hidden="true"
-                    role="presentation"
-                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjI4MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                    style={{
-                      maxWidth: "100%",
-                      display: "block",
-                      margin: 0,
-                      border: "none",
-                      padding: 0,
-                    }}
-                  />
-                </div>
-                <img
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  decoding="async"
-                  style={{
-                    visibility: "hidden",
-                    position: "absolute",
-                    inset: 0,
-                    boxSizing: "border-box",
-                    padding: 0,
-                    border: "none",
-                    margin: "auto",
-                    display: "block",
-                    width: 0,
-                    height: 0,
-                    minWidth: "100%",
-                    maxWidth: "100%",
-                    minHeight: "100%",
-                    maxHeight: "100%",
-                  }}
-                />
               </div>
             </div>
           </div>
@@ -170,7 +103,7 @@ const Revenue = () => {
               </div>
             </div>
           </div>
-          <div className="sm:block">
+          <div className="sm:block hidden">
             <div className="col-span-1 dark:flex">
               <div
                 style={{

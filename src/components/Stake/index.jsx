@@ -1,5 +1,5 @@
 import { Container, Button } from "@material-ui/core";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import LegacyDopple from "./LegacyDopple";
@@ -11,10 +11,14 @@ import StakkingDopple from "./StakkingDopple";
 import YourDopple from "./YourDopple";
 
 const Stake = () => {
+  const [open, setOpen] = useState(false);
+  useEffect(() => {
+    setOpen(window.innerWidth > 1250);
+  }, []);
   return (
     <div className="outer_stake">
-      <Header />
-      <Nav />
+      <Header setOpen={setOpen} />
+      <Nav open={open} />
       <main className="outer_stake">
         <Revenue />
         <PoolTable />
