@@ -3,13 +3,14 @@ import React from "react";
 import { usePadding } from "../../hooks/hooks";
 import Logo from "../utils/Logo";
 import { ReactComponent as LogoTransparent } from "../../images/logo_transparent.svg";
+import { Link } from "react-router-dom";
 const Header = ({ setOpen }) => {
   const { py } = usePadding(1.25);
   return (
     <header>
       <Container className={py} maxWidth="lg">
         <div className="py-3 pb-0 sm:pb-5 sm:py-5 sm:mb-2 flex justify-between items-center">
-          <a href="/">
+          <Link to="/">
             <div className="flex items-center cursor-pointer">
               <div className="lg:flex">
                 <div
@@ -70,7 +71,7 @@ const Header = ({ setOpen }) => {
                 Dopple Finance
               </div>
             </div>
-          </a>
+          </Link>
           <div className="mt-2 flex">
             <div className="sm:flex hidden justify-between">
               <a

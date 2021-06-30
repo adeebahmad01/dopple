@@ -1,8 +1,7 @@
 import { Box, Container, makeStyles, Typography } from "@material-ui/core";
 import React from "react";
 import { useMargin, usePadding } from "../../hooks/hooks";
-import { GradientButton, TextButton } from "../utils/StyledButton";
-import Brightness2OutlinedIcon from "@material-ui/icons/Brightness2Outlined";
+import { GradientButton } from "../utils/StyledButton";
 import Logo from "../utils/Logo";
 const useStyles = makeStyles((theme) => ({
   fos: {
@@ -12,9 +11,7 @@ const useStyles = makeStyles((theme) => ({
 const Header = () => {
   const classes = useStyles();
   const { ml } = useMargin(1);
-  const { mx } = useMargin(0.5);
   const { py } = usePadding(1.25);
-  const { p } = usePadding(0.5);
   return (
     <header>
       <Container
@@ -32,16 +29,6 @@ const Header = () => {
           </Typography>
         </Box>
         <Box display="flex">
-          <TextButton
-            variant="text"
-            style={{ minWidth: `0` }}
-            className={`${p} ${mx}`}
-          >
-            <Brightness2OutlinedIcon
-              style={{ transform: `rotate(135deg)` }}
-              fontSize="1.5rem"
-            />
-          </TextButton>
           <GradientButton className={classes.fos}>Launch App</GradientButton>
         </Box>
       </Container>

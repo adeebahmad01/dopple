@@ -1,5 +1,6 @@
 import { Box, Container, Grid, Typography } from "@material-ui/core";
 import React from "react";
+import { Link } from "react-router-dom";
 import { useMargin } from "../../hooks/hooks";
 import FarmCard from "../utils/FarmCard";
 import { Button, GradientButton } from "../utils/StyledButton";
@@ -58,7 +59,13 @@ const Farm = () => {
               <FarmCard />
             </div>
             <Box textAlign="center" className={mt}>
-              <Button variant="contained" color="primary">
+              <Button
+                component={Link}
+                to="/stake"
+                variant="contained"
+                color="primary"
+                style={{ color: "#fff" }}
+              >
                 View More
               </Button>
             </Box>
