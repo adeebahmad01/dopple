@@ -1,38 +1,7 @@
-import {
-  Container,
-  Paper,
-  Table,
-  TableBody,
-  TableCell as TC,
-  TableContainer,
-  TableHead,
-  TableRow,
-  withStyles,
-  Typography,
-  Collapse,
-} from "@material-ui/core";
 import React from "react";
-import { ReactComponent as DopToken } from "../../images/dop-token.svg";
-
-import { usePadding } from "../../hooks/hooks";
-import { Box } from "../../../../product-hunt/client/node_modules/@material-ui/core";
 import CollapseRow from "../utils/CollapseRow";
 
-const TableCell = withStyles({
-  root: {
-    padding: 0,
-    "&:first-child": {
-      padding: `1.5rem 0 1.5rem 1.5rem`,
-    },
-    "&:last-child": {
-      padding: `1.5rem 1.5rem 1.5rem 0`,
-    },
-  },
-})(TC);
-
 const PoolTable = () => {
-  const { py, px: pxTable } = usePadding(1.5);
-  const { px } = usePadding(2);
   return (
     <section>
       <Container>
