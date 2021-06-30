@@ -7,7 +7,7 @@ const ContactCard = ({ Icon, href, name, subtitle }) => {
   return (
     <Paper style={{ padding: 0, overflow: `hidden` }}>
       <CardActionArea component="a" href={href}>
-        <Box py="3rem" px="1.5rem">
+        <Box textAlign="center" py="3rem" px="1.5rem">
           <Box>
             <Icon width={80} />
           </Box>
