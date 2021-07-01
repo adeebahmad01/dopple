@@ -7,8 +7,8 @@ import img3 from "../../images/beginner-twindex-image.png";
 const NoobTools = () => {
   return (
     <Container>
-      <div className="grid grid-cols-1 sm:grid-cols-3 mb-12 dark:text-white">
-        <div className="beginner-card px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 dark:text-white">
+        <div className="beginner-card px-4 mb-8">
           <a
             target="_blank"
             href="https://twindex.com/#/swap?outputCurrency=0x844fa82f1e54824655470970f7004dd90546bb28"
@@ -23,53 +23,27 @@ const NoobTools = () => {
                 margin: 0,
               }}
             >
-              <div
-                style={{
-                  boxSizing: "border-box",
-                  display: "block",
-                  maxWidth: "100%",
-                }}
-              >
-                <img
-                  alt
-                  aria-hidden="true"
-                  role="presentation"
-                  src={img1}
-                  style={{
-                    maxWidth: "100%",
-                    display: "block",
-                    margin: 0,
-                    border: "none",
-                    padding: 0,
-                  }}
-                />
-              </div>
               <img
                 src={img1}
                 decoding="async"
                 style={{
                   visibility: "inherit",
-                  position: "absolute",
                   inset: 0,
                   boxSizing: "border-box",
                   padding: 0,
                   border: "none",
                   margin: "auto",
                   display: "block",
-                  width: 0,
-                  height: 0,
                   minWidth: "100%",
-                  maxWidth: "100%",
-                  minHeight: "100%",
                   maxHeight: "100%",
                   objectFit: "contain",
                 }}
               />
             </div>
-            <div className="text-center -mt-8 font-bold">Buy DOP</div>
+            <div className="text-center font-bold">Buy DOP</div>
           </a>
         </div>
-        <div className="beginner-card px-4">
+        <div className="beginner-card px-4 mb-8">
           <a
             target="_blank"
             href="https://apeboard.finance/dashboard/null?chain=BSC"
@@ -84,55 +58,27 @@ const NoobTools = () => {
                 margin: 0,
               }}
             >
-              <div
-                style={{
-                  boxSizing: "border-box",
-                  display: "block",
-                  maxWidth: "100%",
-                }}
-              >
-                <img
-                  alt
-                  aria-hidden="true"
-                  role="presentation"
-                  src={img2}
-                  style={{
-                    maxWidth: "100%",
-                    display: "block",
-                    margin: 0,
-                    border: "none",
-                    padding: 0,
-                  }}
-                />
-              </div>
               <img
                 src={img2}
                 decoding="async"
                 style={{
                   visibility: "inherit",
-                  position: "absolute",
                   inset: 0,
                   boxSizing: "border-box",
                   padding: 0,
                   border: "none",
                   margin: "auto",
                   display: "block",
-                  width: 0,
-                  height: 0,
                   minWidth: "100%",
-                  maxWidth: "100%",
-                  minHeight: "100%",
                   maxHeight: "100%",
                   objectFit: "contain",
                 }}
               />
             </div>
-            <div className="text-center -mt-8 font-bold">
-              View Your Portfolio
-            </div>
+            <div className="text-center font-bold">View Your Portfolio</div>
           </a>
         </div>
-        <div className="beginner-card transform px-4">
+        <div className="beginner-card transform mb-8 px-4">
           <a
             target="_blank"
             href="https://swap.arken.finance/#/tokens/bsc_twindex_0x844fa82f1e54824655470970f7004dd90546bb28_0xe9e7cea3dedca5984780bafc599bd69add087d56"
@@ -147,50 +93,24 @@ const NoobTools = () => {
                 margin: 0,
               }}
             >
-              <div
-                style={{
-                  boxSizing: "border-box",
-                  display: "block",
-                  maxWidth: "100%",
-                }}
-              >
-                <img
-                  alt
-                  aria-hidden="true"
-                  role="presentation"
-                  src={img3}
-                  style={{
-                    maxWidth: "100%",
-                    display: "block",
-                    margin: 0,
-                    border: "none",
-                    padding: 0,
-                  }}
-                />
-              </div>
               <img
                 src={img3}
                 decoding="async"
                 style={{
                   visibility: "inherit",
-                  position: "absolute",
                   inset: 0,
                   boxSizing: "border-box",
                   padding: 0,
                   border: "none",
                   margin: "auto",
                   display: "block",
-                  width: 0,
-                  height: 0,
                   minWidth: "100%",
-                  maxWidth: "100%",
-                  minHeight: "100%",
                   maxHeight: "100%",
                   objectFit: "contain",
                 }}
               />
             </div>
-            <div className="text-center -mt-8 font-bold">View DOP Chart</div>
+            <div className="text-center font-bold">View DOP Chart</div>
           </a>
         </div>
       </div>
