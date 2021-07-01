@@ -35,3 +35,7 @@
 .dark\:bg-dark-800 {
   background-color: #2c3038 !important;
 }
+
+* {
+  font-family: Poppins, sans-serif;
+}

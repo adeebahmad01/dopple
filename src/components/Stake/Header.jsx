@@ -128,7 +128,9 @@ const Header = ({ setOpen }) => {
             </div>
             <div
               onClick={() => setOpen((o) => !o)}
-              className="dark:bg-dark-700 dark:text-white mobile-menu-button w-10 sm:w-auto px-2 justify-center sm:px-2 py-2 items-center ml-4 bg-blue-200 rounded-lg cursor-pointer "
+              className={`dark:bg-dark-700 dark:text-white mobile-menu-button w-10 sm:w-auto px-2 justify-center sm:px-2 py-2 items-center ml-4 bg-blue-200 rounded-lg cursor-pointer ${
+                window.innerWidth > 1250 ? "hidden" : ""
+              }`}
             >
               <svg
                 role="img"

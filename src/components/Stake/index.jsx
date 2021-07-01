@@ -6,6 +6,7 @@ import LegacyDopple from "./LegacyDopple";
 import Nav from "./Nav";
 import NoobTools from "./NoobTools";
 import PoolTable from "./PoolTable";
+import PopupProvider from "./PopupProvider";
 import Revenue from "./Revenue";
 import StakkingDopple from "./StakkingDopple";
 import YourDopple from "./YourDopple";
@@ -16,33 +17,35 @@ const Stake = () => {
     setOpen(window.innerWidth > 1250);
   }, []);
   return (
-    <div className="outer_stake">
-      <Header setOpen={setOpen} />
-      <Nav open={open} />
-      <main className="outer_stake">
-        <Revenue />
-        <PoolTable />
-        <YourDopple />
-        <StakkingDopple
-          heading={
-            <>
-              <span>Staking DOPPLE</span>
-              <span className="text-blue-400 text-sm ml-2">(Twindex LP)</span>
-            </>
-          }
-        />
-        <StakkingDopple
-          heading={
-            <>
-              <span>Staking Stablecoin</span>
-            </>
-          }
-        />
-        <LegacyDopple />
-        <NoobTools />
-      </main>
-      <Footer />
-    </div>
+    <PopupProvider>
+      <div className="outer_stake">
+        <Header setOpen={setOpen} />
+        <Nav open={open} />
+        <main className="outer_stake">
+          <Revenue />
+          <PoolTable />
+          <YourDopple />
+          <StakkingDopple
+            heading={
+              <>
+                <span>Staking DOPPLE</span>
+                <span className="text-blue-400 text-sm ml-2">(Twindex LP)</span>
+              </>
+            }
+          />
+          <StakkingDopple
+            heading={
+              <>
+                <span>Staking Stablecoin</span>
+              </>
+            }
+          />
+          <LegacyDopple />
+          <NoobTools />
+        </main>
+        <Footer />
+      </div>
+    </PopupProvider>
   );
 };
 

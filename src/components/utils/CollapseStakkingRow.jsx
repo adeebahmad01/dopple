@@ -1,7 +1,9 @@
 import { Collapse } from "@material-ui/core";
 import React, { useState } from "react";
+import { usePopup } from "../Stake/PopupProvider";
 
 const CollapseStakkingRow = ({ legacyDopple }) => {
+  const { setOpen: setPopupOpen } = usePopup();
   const [open, setOpen] = useState(false);
   return (
     <div className="dark:bg-dark-700 dark:border-0 border-t relative dark:border-t-dark-500">
@@ -154,6 +156,7 @@ const CollapseStakkingRow = ({ legacyDopple }) => {
               <div className="dark:text-white text-xs mb-4">(≈ $0.00)</div>
               <button
                 type="button"
+                onClick={() => setPopupOpen(true)}
                 className="focus:outline-none text-center my-1  w-full py-3 sm:py-2 rounded-md bg-gradient-to-r from-blue-400 to-green-300 text-white font-bold sm:mb-10"
               >
                 Claim

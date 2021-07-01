@@ -97,6 +97,8 @@ function App() {
         lg: 1024,
         md: 950,
         sm: 640,
+        xs: 544,
+        xl: 1400,
       },
     },
     props: {
